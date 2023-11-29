@@ -1,0 +1,163 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  height: 100%;
+  padding: 2em 0;
+  line-height: 1.4;
+  color: #222;
+  font-family: "Mulish", sans-serif;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-image: url("../img/background-dark.jpeg");
+  background-size: cover;
+  overflow-y: hidden;
+  transition: all 0.25s ease-in;
+}
+
+body.light {
+  background-image: url("../img/background-light.jpeg");
+}
+
+h1,
+h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.875em;
+}
+
+h5 {
+  color: #8b8888;
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.switch-container {
+  text-align: center;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.switch-container p {
+  padding: 0 1em;
+}
+
+.switch-container input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.switch {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  background-color: #222;
+  border-radius: 34px;
+}
+
+.ball {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s ease-out;
+}
+
+.ball.move-right {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+.profile-card {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 15%;
+  color: #c9c9c9;
+  transition: all 0.3s ease-in;
+}
+
+.light .profile-card {
+  color: #222;
+}
+
+.top {
+  width: 100%;
+  background: url("../img/texture-1.jpg");
+  padding: 6em;
+  border-radius: 20px 20px 0 0;
+}
+
+.bottom {
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  background-color: #4a4a4a;
+}
+
+.light .bottom {
+  background-color: white;
+}
+
+.cat {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.cat img {
+  margin-top: -85px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.stats {
+  width: 100%;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.stats p {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats i {
+  padding: 0.5em;
+}
+
+.stats span {
+  cursor: pointer;
+  display: block;
+  padding: 0.5em;
+}
+
+.stats span:active {
+  transform: scale(0.88);
+}
